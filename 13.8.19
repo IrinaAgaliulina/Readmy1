@@ -1,0 +1,16 @@
+S=0
+Ticket_amount = int(input("Введите количество билетов: "))
+T=Ticket_amount
+for i in range(1, T+1):
+   Age = int(input("Введите возраст посетителя: "))
+   A=Age
+   if A > 25:
+    S=S+1390
+   elif 18<=A<=25:
+    S=S+990
+   else:
+    S = S + 0
+print ("Стоимость билетов", S)
+if T>3:
+    S = S - S*0.1
+print ("Стоимость билетов со скидкой:", S)
